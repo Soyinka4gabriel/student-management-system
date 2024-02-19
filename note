@@ -1,0 +1,25 @@
+to cerate a virtual environment --- python -m venv venv
+run --- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+to use the virtual environment and activate it  --- venv\scripts\activate
+run --- pip install django 
+run django-admin startproject djangoProject . ----to cerate a new django project with this name djangoProject
+run python manage.py runserver --- to run your server to show django first page 
+run python manage.py startapp students ---- to cearte students app
+
+
+to add a model to the database use
+run python manage.py makemigrations
+then run python manage.py migrate
+
+
+
+to use the django admin you need to create a superuser 
+run python manage.py createsuperuser 
+soyinka4gabriel@gmail.com
+timi12345
+
+
+
+to create from in djangoyou need to first cearte a new file within your app eg froms.py
+from django import froms
+from .models import Student //// Student is the name of the exsiting database class
